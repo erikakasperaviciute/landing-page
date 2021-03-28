@@ -1,0 +1,61 @@
+h1 {
+    color: white;
+    font-size: 58px;
+}
+h2 {
+    color: $font-blackish;
+    font-size: 36px;
+
+}
+
+.intro h2{
+    color: white;
+}
+h3 {
+    color: $font-blackish;
+    font-size: 28px;
+    margin: 14px;
+
+}
+p {
+    color: $font-blackish;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+a {
+    text-decoration: none;
+    color: $font-blackish;
+
+        &.button-sign-in {
+        color: white;
+    }
+        &.page-link {
+            font-size: 18px;
+            // font-weight: 600;
+        }
+        &.brand {
+            font-size: 20px;
+        }
+}
+button {
+    color: white;
+    font-size: 20px;
+}
+
+.testimonial-author {
+    padding-top: 20px;
+        span {
+            font-weight: bold;
+            font-size: 20px;
+         }
+}
+
+::-webkit-input-placeholder, input {
+    padding-left: 10px;
+    font-size: 20px;
+    // padding-top: 5px;
+}

@@ -1,0 +1,124 @@
+.masthead {
+      display: flex;
+    //   flex-direction: column;
+      margin: 50px 0 0 0;
+      width: 100%;
+      height: 700px;
+
+      justify-content: center;
+      // margin: 0 auto;
+    }
+  .masthead-duplicate {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+
+.img-background-waves{
+    display: flex;
+    align-items: center;
+
+}
+.intro  {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 55%;
+}
+
+.attributes {
+  height: 450px;
+  width: 100%;
+  background-color: $bg-greyish;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+
+    .attribute-container {
+      display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-content: center;
+        text-align: center;
+    }
+}
+.attributes-in-detail {
+  // position: relative;
+  // height: 1500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+
+    .row:nth-child(even) {
+
+      display: flex;
+      flex-direction: row-reverse;
+      // width: 300px;
+      // align-content: center;
+      // text-align: center;
+
+    }
+    .row:nth-child(odd) {
+
+      display: flex;
+      flex-direction: row;
+      // width: 300px;
+      // align-content: center;
+      // text-align: center;
+
+    }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+  margin: auto;
+  // justify-content: center;
+  align-content: center;
+    // h2, p {
+    //   margin: auto;
+    // }
+}
+
+
+.testimonials {
+  height: 700px;
+  width: 100%;
+      // display: flex;
+  background-color: $bg-greyish;
+      
+          .all-testimonials {
+  
+              display: flex;
+              justify-content: space-evenly;
+              // align-content: flex-start;
+  
+              align-content: center;
+              flex-direction: row;
+  
+          .testimonial-container {
+              display: flex;
+              flex-direction: column;
+              width: 350px;
+              align-content: center;
+              text-align: center;
+  
+          }
+      }
+  
+  
+  }
+  .testimonials-header{
+      display: flex;
+      justify-content: center;
+      padding-top: 80px;
+      padding-bottom: 40px;
+      margin-top: 0;
+  
+  }
