@@ -12,28 +12,21 @@ i {
     font-size: 80px;
     @include smaller-tablet{
         font-size: 60px;
-  }
+    }
 }
-
 .bg-showcase {
     max-height: 500px;
     width: 50%;
     @include tablet{
         max-height: 400px;
-      }
-      @include small-screen{
-
+    }
+    @include small-screen{
         height: 400px;
         width: 100%;
-      }
-      @include mobile {
+    }
+    @include mobile {
         height: 250px;
-       }
-
-
-    
-    
-
+    }
 }
 img {
     object-fit: fill;
@@ -41,20 +34,14 @@ img {
     max-height: 500px;
     @include tablet{
         max-height: 400px;
-      }
-      @include small-screen{
-
+    }
+    @include small-screen{
         height: 400px;
         width: 100%;
-      }
-      @include mobile {
+    }
+    @include mobile {
         height: 250px;
-       }
-
-
-
-
-   
+    }
 }
 .testimonials-photo img {
     border-radius: 50%;
@@ -64,10 +51,9 @@ img {
     @include tablet{
         width: 150px;
         height: 150px;
-  }
-  @include mobile{
-    width: 100px;
-    height: 100px;
-}
-    
+    }
+    @include mobile{
+        width: 100px;
+        height: 100px;
+    }   
 }
