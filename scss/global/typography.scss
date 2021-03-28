@@ -1,29 +1,89 @@
 h1 {
     color: white;
     font-size: 58px;
+    @include tablet{
+        font-size: 48px;
+  }
+  @include smaller-tablet{
+    font-size: 38px;
+   }
+   @include mobile {
+    font-size: 32px;
+   }
+
 }
 h2 {
     color: $font-blackish;
-    font-size: 36px;
+    // font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    // font-size: 2.5vw;
+    font-size: 48px;
+    @include tablet{
+        // font-size: 2.5vw;
+        font-size: 38px;
+  }
+  @include smaller-tablet{
+    font-size: 26px;
+   }
+   @include small-screen{
+    font-size: 32px;
+   }
+   @include mobile {
+    font-size: 24px;
 
+  }
 }
 
 .intro h2{
     color: white;
+    font-size: 42px;
+    @include tablet{
+        font-size: 32px;
+  }
+  @include mobile {
+    font-size: 26px;
+   }
+
 }
 h3 {
     color: $font-blackish;
-    font-size: 28px;
-    margin: 14px;
+    font-size: 1.7vw;
+    padding-top: 14px;
+    margin: 0;
+    @include tablet{
+        font-size: 2vw;
+  }
+  @include smaller-tablet{
+    font-size: 20px;
+}
+@include mobile {
+    font-size: 18px;
+   }
 
 }
 p {
     color: $font-blackish;
-    font-weight: lighter;
-    font-size: 20px;
+    font-weight: 300;
+    // font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: 22px;
+    // font-size: 1vw;
+    // font-size: 1.5vw;
     line-height: 1.5;
     margin-top: 15px;
     margin-bottom: 15px;
+    @include tablet{
+        font-size: 18px;
+            // font-size: 1.5vw;
+      }
+      @include smaller-tablet{
+       font-size: 16px;
+      }
+      @include small-screen{
+        font-size: 20px;
+       }
+       @include mobile {
+        font-size: 16px;
+       }
+      
 
 }
 a {
@@ -32,13 +92,23 @@ a {
 
         &.button-sign-in {
         color: white;
+        font-size: 18px;
+        @include mobile {
+            font-size: 16px;
+        }
     }
         &.page-link {
             font-size: 18px;
             // font-weight: 600;
+            @include smaller-tablet{
+                font-size: 16px;
+               }
         }
         &.brand {
             font-size: 20px;
+            @include mobile {
+                font-size: 18px;
+            }
         }
 }
 button {
@@ -51,6 +121,9 @@ button {
         span {
             font-weight: bold;
             font-size: 20px;
+            @include tablet{
+                font-size: 18px;
+          }
          }
 }
 
@@ -58,4 +131,7 @@ button {
     padding-left: 10px;
     font-size: 20px;
     // padding-top: 5px;
+    @include smaller-tablet{
+        font-size: 16px;
+       }
 }

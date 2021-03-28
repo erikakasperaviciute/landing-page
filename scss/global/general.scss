@@ -1,5 +1,6 @@
 body {
 font-family: lato;
+font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 }
 
 input {
@@ -8,16 +9,39 @@ input {
     border-radius: 8px;
     width: 500px;
     height: 50px;
+    @include tablet{
+        width: 400px;
+  }
+  @include smaller-tablet{
+    width: 350px;
+    height: 40px;
+   }
+   @include small-screen{
+    width: 80%;
+ }
 }
 
 a.button-sign-in {
     background-color: $main-blue;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 8px;
     margin-right: 150px;
+    @include tablet{
+        margin-right: 100px;
+  }
+  @include mobile {
+    margin-right: 15px;
+    padding: 10px 15px;
+}
 }
 a.brand {
     margin-left: 150px;
+    @include tablet{
+        margin-left: 100px;
+  }
+  @include mobile{
+    margin-left: 15px;
+}
 }
 button {
     background-color: $main-blue;
@@ -27,11 +51,29 @@ button {
     border-radius: 8px;
     margin-left: 5px;
     font-size: 18px;
-    // padding-top: 5px;
     cursor: pointer;
+    @include tablet{
+        width: 410px;
+        margin-top: 5px;
+        margin-left: 0;
+  }
+  @include smaller-tablet{
+    width: 360px;
+    height: 45px;
+   }
+   @include small-screen{
+    width: 83%;
+ }
 
 }
 .circle {
     padding: 0 10px;
+
+  @include smaller-tablet{
+    padding: 0 5px;
+   }
+   @include small-screen {
+    padding: 0 2px;
+   }
 }
 
