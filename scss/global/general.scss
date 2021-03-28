@@ -17,6 +17,9 @@ input {
     @include small-screen {
         width: 80%;
     }
+    @include mobile {
+        width: 95%;
+    }
 }
 a.button-sign-in {
     background-color: $main-blue;
@@ -60,6 +63,9 @@ button {
     }
     @include small-screen {
         width: 83%;
+    }
+    @include mobile {
+        width: 100%;
     }
 }
 .circle {
